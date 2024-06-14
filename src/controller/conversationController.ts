@@ -3,7 +3,6 @@ import { ExampleProfiles, PaymentQuotaStatus, StudentProfile } from '../objects/
 import { ChatCompletionMessageParam } from 'openai/resources/chat/completions';
 import OpenAI from 'openai';
 import { Prompt_Completion } from '../objects/example.prompt';
-// Importar readline y OpenAI
 import readline from 'readline';
 
 const CRM = new Map<string, StudentProfile>();
