@@ -1,6 +1,6 @@
-import readline from 'readline';
 import OpenAI from 'openai';
-import startConversation from './conversationController';
+import readline from 'readline';
+import startConversation from './controller/conversationController';
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,

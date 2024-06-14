@@ -1,9 +1,10 @@
+import { ExampleProfiles, PaymentQuotaStatus, StudentProfile } from '../objects/example.profiles';
+
+import { ChatCompletionMessageParam } from 'openai/resources/chat/completions';
+import OpenAI from 'openai';
+import { Prompt_Completion } from '../objects/example.prompt';
 // Importar readline y OpenAI
 import readline from 'readline';
-import OpenAI from 'openai';
-import { ExampleProfiles, StudentProfile, PaymentQuotaStatus } from './objects/example.profiles';
-import { ChatCompletionMessageParam } from 'openai/resources/chat/completions';
-import { Prompt_Completion } from './objects/example.prompt';
 
 const CRM = new Map<string, StudentProfile>();
 ExampleProfiles.forEach(profile => CRM.set(profile.phone, profile));
